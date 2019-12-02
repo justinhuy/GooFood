@@ -63,4 +63,23 @@ $(document).ready(function () {
         offset: '50%'
     })
 
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon ion-icon')
+        var menuIcon  = $('<ion-icon name="menu" class="ion-menu-icon"></ion-icon>')
+        var closeIcon = $('<ion-icon name="close" class="ion-close-icon"></ion-icon>')
+
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-menu-icon')) {
+            icon.append(closeIcon);
+            icon.removeClass('ion-menu-icon');
+        } else {
+            icon.append(menuIcon)
+            icon.removeClass('ion-close-icon');
+        }
+
+        });
+
+
+    // <ion-icon name="close"></ion-icon>
 });
