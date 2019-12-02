@@ -39,47 +39,43 @@ $(document).ready(function () {
         });
     });
 
-    $('.js--wp-1').waypoint(function(direction) {
+    $('.js--wp-1').waypoint(function (direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
         offset: '50%'
     });
 
-    $('.js--wp-2').waypoint(function(direction) {
+    $('.js--wp-2').waypoint(function (direction) {
         $('.js--wp-2').addClass('animated fadeIn');
     }, {
         offset: '50%'
     });
 
-    $('.js--wp-3').waypoint(function(direction) {
+    $('.js--wp-3').waypoint(function (direction) {
         $('.js--wp-3').addClass('animated fadeIn');
     }, {
         offset: '50%'
     });
 
-    $('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-4').waypoint(function (direction) {
         $('.js--wp-4').addClass('animated pulse');
     }, {
         offset: '50%'
     })
 
-    $('.js--nav-icon').click(function() {
+    $('.js--nav-icon').click(function () {
         var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon ion-icon')
-        var menuIcon  = $('<ion-icon name="menu" class="ion-menu-icon"></ion-icon>')
-        var closeIcon = $('<ion-icon name="close" class="ion-close-icon"></ion-icon>')
+        var icon = $('.js--nav-icon i')
 
         nav.slideToggle(200);
-        if (icon.hasClass('ion-menu-icon')) {
-            icon.append(closeIcon);
-            icon.removeClass('ion-menu-icon');
+        if (icon.hasClass('icon ion-ios-menu')) {
+            icon.addClass('icon ion-ios-close');
+            icon.removeClass('icon ion-ios-menu');
         } else {
-            icon.append(menuIcon)
-            icon.removeClass('ion-close-icon');
+            icon.addClass('icon ion-ios-menu')
+            icon.removeClass('ion-ios-close');
         }
 
-        });
+    });
 
-
-    // <ion-icon name="close"></ion-icon>
 });
