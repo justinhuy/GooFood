@@ -183,4 +183,10 @@
     .contact-form {
         width: 100%;
     }
+
+    footer {
+        padding: 10px;
+        font-size: 70%;
+    }
+
 }
