@@ -189,4 +189,12 @@
         font-size: 70%;
     }
 
+    .section-testimonials {
+        background-attachment: scroll;
+    }
+
+    #wrapper{
+        background-attachment: scroll;
+    }
+
 }
