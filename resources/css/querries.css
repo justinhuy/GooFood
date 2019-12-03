@@ -190,11 +190,11 @@
     }
 
     .section-testimonials {
-        background-attachment: scroll;
+       background-attachment: unset;
     }
 
     #wrapper{
-        background-attachment: scroll;
+        background-attachment: unset;
     }
 
 }
